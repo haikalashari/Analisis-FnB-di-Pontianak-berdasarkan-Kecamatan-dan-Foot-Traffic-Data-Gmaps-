@@ -35,7 +35,7 @@ Proyek ini dirancang untuk menjawab pertanyaan-pertanyaan bisnis strategis berik
 ### Sumber Data
 - **Platform**: Google Maps API
 - **Total Records**: 1,250 bisnis FnB
-- **Periode**: Data terkini (scraped dari Google Maps)
+- **Periode**: Data scapred pada tanggal 2026-09-16 (scraped dari Google Maps)
 - **Coverage Area**: Kota Pontianak, Indonesia
 
 ### Fitur Utama Dataset
