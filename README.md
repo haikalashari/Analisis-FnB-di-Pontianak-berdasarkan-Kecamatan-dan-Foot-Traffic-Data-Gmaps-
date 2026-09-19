@@ -26,10 +26,6 @@ Proyek ini dirancang untuk menjawab pertanyaan-pertanyaan bisnis strategis berik
    - Kategori dengan potensi pertumbuhan tinggi
    - Rekomendasi lokasi strategis
 
-5. **Bagaimana foot traffic patterns mempengaruhi kesuksesan bisnis FnB?**
-   - Hubungan antara popularitas lokasi dan performa bisnis
-   - Analisis seasonal patterns
-
 ## 📊 Dataset
 
 ### Sumber Data
