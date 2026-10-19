@@ -9,22 +9,13 @@ Proyek ini menganalisis kompetitor bisnis Food & Beverage (FnB) di wilayah Ponti
 Proyek ini dirancang untuk menjawab pertanyaan-pertanyaan bisnis strategis berikut:
 
 1. **Bagaimana distribusi bisnis FnB di berbagai kecamatan Pontianak?**
-   - Mengidentifikasi area dengan konsentrasi bisnis FnB tertinggi
-   - Menentukan kecamatan dengan potensi pasar terbesar
 
 2. **Kategori FnB apa yang paling populer di Pontianak?**
-   - Analisis jenis-jenis bisnis FnB yang dominan
-   - Preferensi pasar berdasarkan kategori
 
 3. **Bagaimana performa bisnis FnB dilihat dari rating dan ulasan?**
-   - Menganalisis tingkat kepuasan pelanggan (rating)
-   - Mengukur engagement pelanggan (jumlah ulasan/reviews)
-   - Identifikasi bisnis dengan performa terbaik
 
 4. **Apa saja peluang bisnis FnB baru di Pontianak?**
-   - Identifikasi area dengan kompetisi rendah
-   - Kategori dengan potensi pertumbuhan tinggi
-   - Rekomendasi lokasi strategis
+
 
 ## 📊 Dataset
 
