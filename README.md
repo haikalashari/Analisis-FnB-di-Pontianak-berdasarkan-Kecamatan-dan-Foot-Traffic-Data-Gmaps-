@@ -8,14 +8,9 @@ Proyek ini menganalisis kompetitor bisnis Food & Beverage (FnB) di wilayah Ponti
 
 Proyek ini dirancang untuk menjawab pertanyaan-pertanyaan bisnis strategis berikut:
 
-1. **Bagaimana distribusi bisnis FnB di berbagai kecamatan Pontianak?**
+1. **Di kecamatan mana peluang terbaik untuk membuka bisnis F&B baru?**
 
-2. **Kategori FnB apa yang paling populer di Pontianak?**
-
-3. **Bagaimana performa bisnis FnB dilihat dari rating dan ulasan?**
-
-4. **Apa saja peluang bisnis FnB baru di Pontianak?**
-
+2. **Kategori F&B apa yang sebaiknya dibuka dan di mana lokasinya?**
 
 ## 📊 Dataset
 
@@ -98,7 +93,7 @@ Dari 1.206 bisnis, **795 (~66%) adalah Cafe/Warkop** — jauh melampaui kategori
 
 **Insight kunci:** meskipun Cafe jumlahnya paling banyak, secara *kualitas* performa (rata-rata ulasan per outlet & rating) kategori ini justru **paling lemah**. Restaurant & Dining menarik foot traffic hampir 2,5× lipat dari Cafe (285 vs 114 ulasan/outlet) dengan rating lebih tinggi — indikasi Cafe adalah kategori paling jenuh dan kompetitif, sementara Restaurant & Dining relatif under-supplied dibanding daya tariknya.
 
-### 3. Bakery & Dessert: permata tersembunyi, tapi hati-hati bias outlier
+### 3. Bakery & Dessert: hati-hati bias outlier
 
 Bakery & Dessert punya foot traffic dan rating tertinggi dari semua kategori, tapi jumlah venue-nya sangat sedikit (hanya 13 di seluruh Pontianak). Saat ditelusuri per outlet, angka ini **didorong kuat oleh 1–2 destinasi legendaris**, terutama **Es Krim Angi** di Pontianak Selatan (4.520 ulasan, rating 4,6) dan **Es Teler Jeranding** di Pontianak Barat (482 ulasan). Di luar dua nama itu, mayoritas venue bakery/dessert lain hanya punya belasan hingga ratusan ulasan. Artinya angka rata-rata kategori ini agak *skewed* — bukan berarti setiap toko dessert baru otomatis akan seramai itu, tapi tetap mengonfirmasi kategori ini kurang tergarap dan punya daya tarik kuat saat eksekusinya tepat.
 
@@ -115,32 +110,25 @@ Di kecamatan dengan peluang terbaik ini, Cafe masih mendominasi jumlah pemain, t
 
 ---
 
-## 📈 Visualisasi & Pola yang Ditemukan
 
-Notebook menghasilkan 4 visualisasi utama:
+## 💡Konklusi dan Menjawab Pertanyaan
 
-1. **Dual-axis bar + line chart** — jumlah kompetitor (bar) vs rata-rata foot traffic (line) per kecamatan. Pola yang terlihat: dua kurva ini **tidak berbanding lurus** — Pontianak Kota punya kompetitor terbanyak tapi foot traffic per outlet rendah, sementara Pontianak Tenggara sebaliknya. Pola inilah yang mendasari rekomendasi lokasi.
-2. **Grouped bar chart** — distribusi 4 kategori utama di tiap kecamatan. Pola: Cafe selalu jadi bar tertinggi di semua kecamatan tanpa kecuali, memvisualkan kejenuhan kategori Cafe secara nasional.
-3. **Heatmap (kecamatan × kategori)** — rata-rata foot traffic tiap kombinasi kecamatan-kategori. Sel dengan warna paling "panas" justru muncul di kategori Restaurant & Dining/Bakery & Dessert di beberapa kecamatan non-pusat kota, bukan di Cafe — menunjukkan *hot spot* peluang tersembunyi di luar kategori yang paling ramai pemainnya.
-4. **Peta interaktif (folium + marker cluster)** — sebaran geografis seluruh 1.206 bisnis berdasarkan koordinat lat/lng, dikelompokkan per kecamatan untuk validasi lokasi lapangan.
+### 1. Di kecamatan mana peluang terbaik untuk membuka bisnis F&B baru?
+## Rekomendasi Utama: Pontianak Tenggara
+Mengapa? Kecamatan ini memiliki rasio suplai-permintaan paling sehat.
+Kompetisi Rendah: Hanya memiliki 88 kompetitor (jauh lebih sedikit dibandingkan pusat keramaian utama seperti Pontianak Kota dengan 351 outlet dan Pontianak Selatan dengan 308 outlet).
+Kunjungan Pelanggan (Foot Traffic) Tinggi: Mencatatkan rata-rata 192.76 ulasan per outlet (tertinggi kedua setelah Pontianak Selatan). Hal ini mengindikasikan pasar lokal di Pontianak Tenggara sangat aktif, haus akan opsi kuliner baru, tetapi belum jenuh.
+Tingkat Kepuasan Tinggi: Rata-rata rating di kawasan ini mencapai 4.13, menandakan ekspektasi kualitas yang tinggi dari konsumen lokal.
 
-**Pola besar yang konsisten di semua visualisasi:** *jumlah kompetitor tinggi tidak selalu berarti performa/foot traffic tinggi*, dan kategori dengan jumlah pemain paling banyak (Cafe) justru punya efisiensi foot traffic per outlet paling rendah — klasik tanda pasar jenuh (oversaturated market).
+### 2. Kategori F&B apa yang sebaiknya dibuka dan di mana lokasinya?
+## Opsi A: Membuka Restoran Modern / Akses Cepat di Pontianak Tenggara
+Rekomendasi Bisnis: Restaurant & Dining (khususnya sub-kategori makanan lokal modern, kuliner Asia populer seperti ramen/dimsum, atau hidangan ayam/fast-food berkualitas).
+Analisis Peluang:
+Dominasi pasar di Pontianak Tenggara saat ini masih diduduki oleh format Cafe/Warkop (45 outlet) dan Restaurant & Dining (37 outlet).
+Dibandingkan dengan tren kejenuhan industri kopi (Cafe/Warkop) di Pontianak secara keseluruhan, kategori Restaurant & Dining secara konsisten menarik rata-rata foot traffic yang jauh lebih masif (285 ulasan per outlet) dibandingkan Cafe biasa (hanya 114 ulasan per outlet).
+Membuka restoran dengan target keluarga muda, pekerja kantoran, dan mahasiswa di Pontianak Tenggara akan memberikan tingkat keberhasilan jangka panjang yang lebih tinggi.
 
----
 
-## 💡 Rekomendasi Strategis
-
-### 1. Lokasi terbaik: Pontianak Tenggara
-Rasio suplai-permintaan paling sehat di Pontianak — kompetitor rendah (88 outlet), foot traffic tinggi (192,76 ulasan/outlet, tertinggi kedua), dan rating pasar tinggi (4,13) yang menandakan ekspektasi kualitas konsumen di area ini tinggi namun tetap bisa dipenuhi.
-
-### 2. Opsi A — Restaurant & Dining modern di Pontianak Tenggara
-Buka restoran modern/akses cepat (kuliner lokal modern, Asian food seperti ramen/dimsum, atau ayam/fast-food berkualitas) menyasar keluarga muda, pekerja kantoran, dan mahasiswa. Kategori ini baru punya 37 pemain di Tenggara namun secara historis menarik foot traffic ~2,5× lebih besar dari Cafe biasa.
-
-### 3. Opsi B — Bakery & Dessert premium di Pontianak Selatan/Kota
-Buka bakery/dessert modern dan *instagramable* (artisan bakery, gelato, modern dessert house) di sekitar Pontianak Selatan atau Pontianak Kota. Kategori ini adalah *under-served market* dengan foot traffic dan rating tertinggi di Pontianak — meski didorong oleh beberapa nama legendaris, ini membuktikan ada minat besar masyarakat terhadap dessert yang belum banyak digarap secara modern.
-
-### 4. Rekomendasi Aksi Lanjutan
-Sebelum eksekusi, lakukan **validasi lokasi langsung** di titik-titik terpilih di Pontianak Tenggara: bandingkan foot traffic aktual di lapangan, kepadatan & jenis kompetitor terdekat, rentang harga, target konsumen, dan jam ramai — karena data Google Maps adalah proxy, bukan pengganti survei lapangan.
 
 ### ⚠️ Catatan & Keterbatasan
 - Foot traffic di sini adalah **proxy dari jumlah ulasan Google (reviewsCount)**, bukan data kunjungan aktual — bisnis lama cenderung terakumulasi lebih banyak ulasan.
@@ -152,35 +140,6 @@ Sebelum eksekusi, lakukan **validasi lokasi langsung** di titik-titik terpilih d
 4. **Geographic Accuracy** - Bergantung pada akurasi Google Maps
 5. **Category Ambiguity** - Beberapa bisnis memiliki multi-kategori
 
-
-## 📁 Struktur File
-
-```
-├── README.md                          # Dokumentasi proyek
-├── Analisis_FnB_di_Pontianak_...ipynb # Jupyter notebook analisis
-├── Data/
-│   └── allfieldjson.json              # Raw data dari Google Maps
-└── Results/                           # Output analisis
-    ├── visualisasi_distribusi.png     # Peta distribusi bisnis
-    ├── analisis_kategori.csv          # Breakdown kategori
-    └── rekomendasi_lokasi.csv         # Rekomendasi area
-```
-
-## 🛠️ Tools & Technologies
-
-- **Python 3.x**
-- **Pandas** - Data manipulation & analysis
-- **Numpy** - Numerical computations
-- **Matplotlib & Seaborn** - Data visualization
-- **Google Maps API** - Data collection
-- **Jupyter Notebook** - Interactive analysis
-
-
-
-
-## 📞 Kontak & Kontribusi
-
-Proyek ini dibuat untuk tujuan analisis pasar dan insights bisnis.
 
 ---
 
